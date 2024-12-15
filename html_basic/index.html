@@ -4,6 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Cool Web Page</title>
+    <style>
+        /* Styling for the table */
+        table {
+            width: 100%;
+            border-collapse: collapse; /* Ensures borders between cells are collapsed */
+            margin-top: 20px; /* Adds space before the table */
+        }
+
+        /* Table header styling */
+        th {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-align: left;
+        }
+
+        /* Table data cell styling */
+        td {
+            padding: 8px;
+            text-align: left;
+            border: 1px solid #ddd; /* Light gray border for table cells */
+        }
+
+        /* Add zebra striping to table rows for better readability */
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        /* Styling for the table container */
+        .table-container {
+            margin-top: 30px; /* Space above the table */
+        }
+    </style>
 </head>
 <body>
     <!-- Header Section (Navigation) -->
@@ -36,6 +69,43 @@
             <a href="https://www.example.com">
                 <img src="https://i.ibb.co/gTDZZT8/ALX-Logo-07.png" alt="ALX Logo" width="200">
             </a>
+
+            <!-- Table of Learners (added before closing article tag) -->
+            <h2>Learners Information</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Country</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John</td>
+                            <td>25</td>
+                            <td>USA</td>
+                        </tr>
+                        <tr>
+                            <td>Emily</td>
+                            <td>28</td>
+                            <td>Canada</td>
+                        </tr>
+                        <tr>
+                            <td>Michael</td>
+                            <td>32</td>
+                            <td>Australia</td>
+                        </tr>
+                        <tr>
+                            <td>Sophia</td>
+                            <td>21</td>
+                            <td>UK</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
         </article>
 
         <!-- Aside Section (Placeholder for later comments) -->
